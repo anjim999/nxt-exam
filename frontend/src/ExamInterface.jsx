@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Info, Clock, RotateCw, Battery, Wifi, VolumeX, Power, Key } from 'lucide-react';
 
-export default function ExamInterface({ onSubmit, timeLeft }) {
+export default function ExamInterface({ section, onSubmit, timeLeft }) {
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
   const [answers, setAnswers] = useState({});
   const [sysTime, setSysTime] = useState(new Date());
