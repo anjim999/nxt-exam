@@ -43,16 +43,16 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
     }
   };
 
-  // Generate 30 mock questions
-  const questions = Array.from({ length: 30 }, (_, i) => ({
+  // Generate mock questions based on the section
+  const questions = Array.from({ length: qCount }, (_, i) => ({
     id: `0c614c`, // Using standard watermark ID based on image
     text: i === 0 
-      ? "Why are indexes commonly created on database columns?"
+      ? `[${section?.title || 'Section'}] Why are indexes commonly created on database columns?`
       : i === 1 
-      ? "If Binary Search is applied to find the smallest index i such that arr[i] >= x, it is known as:"
+      ? `[${section?.title || 'Section'}] If Binary Search is applied to find the smallest index i such that arr[i] >= x, it is known as:`
       : i === 2
-      ? "A customer buys a washing machine priced at Rs. 75,000, to be paid in 6 equal annual installments. The seller charges simple interest at 12% per annum on the original principal for the entire 6-year period. Find the amount of each installment."
-      : `Consider a scenario where an application needs to maintain a sorted list of unique identifiers in memory. Which of the following data structures would provide the optimal average time complexity for both insertion and search operations?`,
+      ? `[${section?.title || 'Section'}] A customer buys a washing machine priced at Rs. 75,000, to be paid in 6 equal annual installments. The seller charges simple interest at 12% per annum on the original principal for the entire 6-year period. Find the amount of each installment.`
+      : `[${section?.title || 'Section'}] Consider a scenario where an application needs to maintain a sorted list of unique identifiers in memory. Which of the following data structures would provide the optimal average time complexity for both insertion and search operations?`,
     options: i === 0 
       ? [
           "To speed up data retrieval operations like SELECT queries",
@@ -158,7 +158,7 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
           {/* Row 2: Section Info and Timer */}
           <div className="relative flex items-center h-8 w-full mt-1">
             <div className="absolute left-0 flex flex-col">
-              <span className="text-[#003b73] font-bold text-[13px] uppercase tracking-wide">DSA MCQS</span>
+              <span className="text-[#003b73] font-bold text-[13px] uppercase tracking-wide">{section?.title || 'DSA MCQS'}</span>
               <button onClick={requestFullscreen} className="text-[#0056b3] font-bold text-[11px] flex items-center gap-1 hover:underline mt-0.5">
                 <Info size={14} className="fill-[#0056b3] text-white" /> INSTRUCTIONS
               </button>
