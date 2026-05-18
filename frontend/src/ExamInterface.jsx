@@ -151,7 +151,7 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
           <div className="flex justify-between items-center">
             <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain object-left" />
             <div className="text-[13px] font-semibold text-gray-700">
-              Allu Venkata Reddy
+              Mandagiri Sri Rama Veeranjaneyulu
             </div>
           </div>
           
