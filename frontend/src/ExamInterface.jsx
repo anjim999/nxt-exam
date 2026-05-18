@@ -44,6 +44,7 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
   };
 
   // Generate mock questions based on the section
+  const qCount = section?.questionCount || 30;
   const questions = Array.from({ length: qCount }, (_, i) => ({
     id: `0c614c`, // Using standard watermark ID based on image
     text: i === 0 
