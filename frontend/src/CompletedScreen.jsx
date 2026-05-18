@@ -65,9 +65,9 @@ export default function CompletedScreen() {
       </div>
 
       {/* Header */}
-      <header className="px-10 py-5 bg-white border-b border-gray-200 shadow-sm flex justify-between items-center">
+      <header className="px-10 py-4 bg-white border-b border-gray-200 shadow-sm flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[32px] object-contain object-left" />
+          <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain object-left" />
         </div>
         <div className="flex justify-end items-center gap-1 text-[13px] font-semibold text-gray-700">
           Mandagiri Sri Rama Veeranjaneyulu

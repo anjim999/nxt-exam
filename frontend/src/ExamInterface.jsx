@@ -144,12 +144,12 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
           </button>
         </div>
       </div>      {/* Main Header */}
-      <header className="px-10 pb-4 pt-3 border-b-[4px] border-[#0056b3] relative z-10">
-        <div className="flex flex-col gap-5">
+      <header className="px-10 pb-3 pt-2 border-b-[4px] border-[#0056b3] relative z-10 bg-[#eaeced]">
+        <div className="flex flex-col gap-2">
           
           {/* Row 1: Logo and Name */}
           <div className="flex justify-between items-center">
-            <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[32px] object-contain object-left" />
+            <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain object-left" />
             <div className="text-[13px] font-semibold text-gray-700">
               Mandagiri Sri Rama Veeranjaneyulu
             </div>
@@ -230,7 +230,7 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
               <button
                 key={idx}
                 onClick={() => setCurrentQuestionIdx(idx)}
-                className={`w-8 h-8 flex items-center justify-center text-[10px] font-medium rounded-lg border transition-colors ${
+                className={`w-8 h-8 flex items-center justify-center text-[10px] font-medium rounded-md border transition-colors ${
                   currentQuestionIdx === idx 
                     ? 'border-blue-500 text-blue-700 bg-blue-50 ring-2 ring-blue-200' 
                     : answers[idx] !== undefined 
@@ -246,15 +246,15 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
           <div className="pl-6 pt-6 border-t border-gray-300">
             <div className="flex flex-col gap-3 text-[11px] text-gray-500 font-medium tracking-wide">
               <div className="flex items-center gap-3">
-                <div className="w-3.5 h-3.5 border-[1.5px] border-blue-500 rounded-full bg-transparent"></div>
+                <div className="w-3.5 h-3.5 border-[1.5px] border-blue-500 rounded-sm bg-transparent"></div>
                 <span>Current question</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-3.5 h-3.5 border-[1.5px] border-green-500 rounded-full bg-green-100"></div>
+                <div className="w-3.5 h-3.5 border-[1.5px] border-green-500 rounded-sm bg-green-100"></div>
                 <span>Attempted : {attemptedCount}</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-3.5 h-3.5 border-[1.5px] border-gray-300 rounded-full bg-white"></div>
+                <div className="w-3.5 h-3.5 border-[1.5px] border-gray-300 rounded-sm bg-white"></div>
                 <span>Unattempted : {unattemptedCount}</span>
               </div>
             </div>

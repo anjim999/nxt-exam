@@ -4,8 +4,8 @@ import { Trophy, Clock } from 'lucide-react';
 export default function SectionSelection({ onStartSection }) {
   return (
     <div className="flex flex-col min-h-screen bg-[#e9ecef]">
-      <header className="px-10 py-5 bg-white border-b border-gray-200 shadow-sm flex items-center">
-        <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[32px] object-contain object-left" />
+      <header className="px-10 py-4 bg-white border-b border-gray-200 shadow-sm flex items-center">
+        <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain object-left" />
       </header>
       
       <main className="flex-1 p-10 max-w-4xl mx-auto w-full">

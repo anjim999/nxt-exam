@@ -4,8 +4,8 @@ import { BookOpen, Clock } from 'lucide-react';
 export default function WelcomeScreen({ onStart }) {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-10 py-5 bg-white border-b border-gray-200">
-        <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-12 object-contain mb-4" />
+      <header className="px-10 py-4 bg-white border-b border-gray-200">
+        <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain" />
       </header>
       
       <main className="flex-1 bg-[#1b2128] text-white px-10 py-16">
