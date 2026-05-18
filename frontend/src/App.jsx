@@ -8,8 +8,8 @@ const INITIAL_SECTIONS = [
   { id: 'logical', title: 'Logical and Aptitude MCQs', type: 'Multiple Choice Exam', questionCount: 30, score: 30, duration: '30 Min', status: 'active' },
   { id: 'technical', title: 'Technical MCQs', type: 'Multiple Choice Exam', questionCount: 30, score: 30, duration: '30 Min', status: 'locked' },
   { id: 'dsa_mcq', title: 'DSA MCQs', type: 'Multiple Choice Exam', questionCount: 30, score: 30, duration: '30 Min', status: 'locked' },
-  { id: 'sql', title: 'SQL Coding', type: 'Coding Assessment', questionCount: 2, score: 20, duration: '30 Min', status: 'locked' },
-  { id: 'dsa_coding', title: 'DSA Coding', type: 'Coding Assessment', questionCount: 2, score: 20, duration: '30 Min', status: 'locked' }
+  { id: 'sql', title: 'SQL Coding', type: 'Coding Assessment', questionCount: 30, score: 30, duration: '30 Min', status: 'locked' },
+  { id: 'dsa_coding', title: 'DSA Coding', type: 'Coding Assessment', questionCount: 30, score: 30, duration: '30 Min', status: 'locked' }
 ];
 
 export default function App() {
