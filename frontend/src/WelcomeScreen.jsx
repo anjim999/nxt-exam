@@ -10,7 +10,7 @@ export default function WelcomeScreen({ onStart }) {
       
       <main className="flex-1 bg-[#1b2128] text-white px-10 py-16">
         <h2 className="text-lg font-normal text-gray-300 mb-4">
-          Hi Mandagiri Sri Rama Veeranjaneyulu,<br/>Welcome to
+          Hi Allu Venkata Reddy,<br/>Welcome to
         </h2>
         <h1 className="text-4xl font-bold text-[#f2ebd9] mb-12">
           Offline Placement Exam
