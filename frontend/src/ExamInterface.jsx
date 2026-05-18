@@ -48,12 +48,12 @@ export default function ExamInterface({ section, onSubmit, timeLeft }) {
   const questions = Array.from({ length: qCount }, (_, i) => ({
     id: `0c614c`, // Using standard watermark ID based on image
     text: i === 0 
-      ? `[${section?.title || 'Section'}] Why are indexes commonly created on database columns?`
+      ? `Why are indexes commonly created on database columns?`
       : i === 1 
-      ? `[${section?.title || 'Section'}] If Binary Search is applied to find the smallest index i such that arr[i] >= x, it is known as:`
+      ? `If Binary Search is applied to find the smallest index i such that arr[i] >= x, it is known as:`
       : i === 2
-      ? `[${section?.title || 'Section'}] A customer buys a washing machine priced at Rs. 75,000, to be paid in 6 equal annual installments. The seller charges simple interest at 12% per annum on the original principal for the entire 6-year period. Find the amount of each installment.`
-      : `[${section?.title || 'Section'}] Consider a scenario where an application needs to maintain a sorted list of unique identifiers in memory. Which of the following data structures would provide the optimal average time complexity for both insertion and search operations?`,
+      ? `A customer buys a washing machine priced at Rs. 75,000, to be paid in 6 equal annual installments. The seller charges simple interest at 12% per annum on the original principal for the entire 6-year period. Find the amount of each installment.`
+      : `Consider a scenario where an application needs to maintain a sorted list of unique identifiers in memory. Which of the following data structures would provide the optimal average time complexity for both insertion and search operations?`,
     options: i === 0 
       ? [
           "To speed up data retrieval operations like SELECT queries",
