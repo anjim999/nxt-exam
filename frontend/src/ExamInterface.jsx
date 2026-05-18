@@ -52,7 +52,7 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
       ? "If Binary Search is applied to find the smallest index i such that arr[i] >= x, it is known as:"
       : i === 2
       ? "A customer buys a washing machine priced at Rs. 75,000, to be paid in 6 equal annual installments. The seller charges simple interest at 12% per annum on the original principal for the entire 6-year period. Find the amount of each installment."
-      : `Sample Question ${i + 1}: What is the correct option for this technical question?`,
+      : `Consider a scenario where an application needs to maintain a sorted list of unique identifiers in memory. Which of the following data structures would provide the optimal average time complexity for both insertion and search operations?`,
     options: i === 0 
       ? [
           "To speed up data retrieval operations like SELECT queries",
@@ -75,10 +75,10 @@ export default function ExamInterface({ onSubmit, timeLeft }) {
           "Rs.21500"
         ]
       : [
-          "Option A - Standard answer",
-          "Option B - Alternative answer",
-          "Option C - Incorrect answer",
-          "Option D - None of the above"
+          "A balanced binary search tree (e.g., AVL or Red-Black Tree)",
+          "A standard singly linked list",
+          "An unsorted dynamic array",
+          "A hash table with linear probing"
         ]
   }));
 
