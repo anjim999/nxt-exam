@@ -70,7 +70,7 @@ export default function CompletedScreen() {
           <img src="/nxtwave-logo.png" alt="NXT WAVE" className="h-[45px] object-contain object-left" />
         </div>
         <div className="flex justify-end items-center gap-1 text-[13px] font-semibold text-gray-700">
-          Mandagiri Sri Rama Veeranjaneyulu
+          Allu Venkata Reddy
           <ChevronDown size={16} className="text-gray-500" />
         </div>
       </header>
