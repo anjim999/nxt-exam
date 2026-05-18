@@ -13,7 +13,7 @@ export default function WelcomeScreen({ onStart }) {
         {/* Left Side: Original Content */}
         <div className="w-1/2 flex flex-col">
           <h2 className="text-lg font-normal text-gray-300 mb-4">
-            Hi Allu Venkata Reddy,<br/>Welcome to
+            Hi Mandagiri Sri Rama Veeranjaneyulu,<br/>Welcome to
           </h2>
           <h1 className="text-4xl font-bold text-[#f2ebd9] mb-12">
             Offline Placement Exam
